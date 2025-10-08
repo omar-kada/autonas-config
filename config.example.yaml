@@ -1,0 +1,12 @@
+
+AUTONAS_HOST: "<hostname>"
+SERVICES_PATH: "/path/to/directory/where/services/are/stored"
+DATA_PATH: "/path/to/data/folder"
+
+enabled_services: # list of services to install
+  - homepage
+  - dockge
+
+services:
+  homepage:
+    PORT: CUSTOM_PORT
