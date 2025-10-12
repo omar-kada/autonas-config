@@ -12,4 +12,10 @@ services:
     restart: always
     env_file:
       - .env
+    labels:
+      - homepage.group=Services
+      - homepage.name=Uptime Kuma
+      - homepage.icon=uptime-kuma.png
+      - homepage.href=http://truenas-scale:3001/
+      - homepage.description=Uptime Kuma
 networks: {}

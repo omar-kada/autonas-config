@@ -5,10 +5,10 @@ STOP: 0
 services:
   homepage:
     PORT: 3000
-    VERSION: v1.4.5
+    VERSION: v1.5.0
     DESCRIPTION: My Homepage
-    PUID: 1000
-    PGID: 1000
+    PUID: 0
+    PGID: 0
     HOMEPAGE_ALLOWED_HOSTS: '*'
 
   immich:

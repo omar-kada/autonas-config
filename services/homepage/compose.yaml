@@ -10,7 +10,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./config:/app/config # Make sure your local config directory exists
+      - ${SERVICES_PATH}/homepage/config:/app/config # Make sure your local config directory exists
       - ${DATA_PATH}:/app/data
       - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations, see alternative methods
     environment:

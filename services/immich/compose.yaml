@@ -29,6 +29,12 @@ services:
     restart: always
     healthcheck:
       disable: false
+    labels:
+      - homepage.group=Services
+      - homepage.name=Immich
+      - homepage.icon=immich.png
+      - homepage.href=http://truenas-scale:2283/
+      - homepage.description=Immich
   immich-machine-learning:
     container_name: immich_machine_learning
     # For hardware acceleration, add one of -[armnn, cuda, openvino] to the image tag.
