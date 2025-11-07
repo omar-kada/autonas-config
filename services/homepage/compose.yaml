@@ -3,6 +3,7 @@ services:
     image: ghcr.io/gethomepage/homepage:${VERSION:-latest}
     container_name: homepage
     restart: unless-stopped
+    user: "${UID:-1000}:${GID:-1000}"
     extra_hosts:
       - host.docker.internal:host-gateway
     ports:

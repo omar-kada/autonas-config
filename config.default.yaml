@@ -2,6 +2,7 @@
 PULL: 1
 STOP: 0
 
+# if a service is present here, it means it's managed by autonas
 services:
   homepage:
     PORT: 3000
